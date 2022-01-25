@@ -1,4 +1,4 @@
-$font: "Helvetica Neue";
+$font: "proxima-nova", sans-serif;
 
 //Colors
 $white: #fff;
@@ -6,5 +6,81 @@ $black: #000;
 
 body {
     font-family: $font;
-    background-color: aquamarine;
+    font-size: 16px;
+    background-color: $white;
+    margin: 0px;
 }
+
+// ---------------
+// NAVBAR & HEADER
+// ---------------
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-center {
+    width: 85vw;
+  }
+  .nav-header {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-logo{
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: $black;
+  }
+  .nav-link {
+    margin: 0 20px;
+    text-decoration: none;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color:  $black;
+    &:last-child {
+        margin-right: 0px;
+    }
+  }
+  .active-link {
+    color: $white;
+    background-color: $black;
+  }
+
+// ---------------
+// FOOTER
+// ---------------
+.page-footer {
+    height: 8rem;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: $black;
+    color: $white;
+  }
+  .page-footer h5 {
+    margin-bottom: 0;
+  }
+  .page-footer p {
+    margin-bottom: 0;
+    width: 85vw;
+  }
+
+// ---------------
+// 404 ERROR
+// ---------------
+
+  .error-page {
+    min-height: calc(100vh - (6rem + 4rem));
+    text-align: center;
+    padding-top: 3rem;
+  }
+  .error-page h1 {
+    font-size: 9rem;
+  }

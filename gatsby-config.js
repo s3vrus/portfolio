@@ -29,6 +29,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
+      },
+    },
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-sass`
     // this (optional) plugin enables Progressive Web App + Offline functionality
