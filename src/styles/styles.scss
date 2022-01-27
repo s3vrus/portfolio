@@ -3,13 +3,26 @@ $font: "proxima-nova", sans-serif;
 //Colors
 $white: #fff;
 $black: #000;
+$beige: #DFD3C3;
+$dark: #0F0E0E;
+
+// ---------------
+// GLOBALS
+// ---------------
 
 body {
-    font-family: $font;
-    font-size: 16px;
-    background-color: $white;
-    margin: 0px;
+  font-family: $font;
+  font-size: 16px;
+  background-color: $dark;
+  margin: 0px;
 }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
 
 // ---------------
 // NAVBAR & HEADER
@@ -33,7 +46,7 @@ body {
     font-weight: 700;
     text-decoration: none;
     letter-spacing: 1.5px;
-    color: $black;
+    color: $beige;
   }
   .nav-link {
     margin: 0 20px;
@@ -41,14 +54,13 @@ body {
     letter-spacing: 1.75px;
     text-transform: uppercase;
     font-size: 0.75rem;
-    color:  $black;
+    color:  $beige;
     &:last-child {
         margin-right: 0px;
     }
   }
   .active-link {
-    color: $white;
-    background-color: $black;
+    color: $beige;
   }
 
 // ---------------
@@ -61,8 +73,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: $black;
-    color: $white;
+    background: $dark;
+    color: $beige;
   }
   .page-footer h5 {
     margin-bottom: 0;
@@ -76,11 +88,36 @@ body {
 // 404 ERROR
 // ---------------
 
-  .error-page {
-    min-height: calc(100vh - (6rem + 4rem));
-    text-align: center;
-    padding-top: 3rem;
-  }
-  .error-page h1 {
-    font-size: 9rem;
-  }
+.error-page {
+  min-height: calc(100vh - (6rem + 4rem));
+  text-align: center;
+  padding-top: 3rem;
+}
+.error-page h1 {
+  font-size: 9rem;
+  color: $beige;
+}
+
+
+// ---------------
+// INDEX PAGE
+// ---------------
+
+.index-name {
+  font-family: $font;
+  font-size: 24px;
+  font-weight: 100;
+  color: $beige;
+}
+.index-large-heading {
+  font-family: $font;
+  font-size: 96px;
+  font-weight: 400;
+  color: $beige;
+}
+.index-medium-heading {
+  font-family: $font;
+  font-size: 74px;
+  font-weight: 400;
+  color: $beige;
+}

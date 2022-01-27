@@ -4,9 +4,9 @@ import Layout from '../components/Layout'
 
 const IndexPage = () => (
   <Layout>
-    <h2>Collin Osborne</h2>
-    <h1>Web Developer</h1>
-    <h1>UI-UX Designer</h1>
+    <h2 className="index-name">Collin Osborne</h2>
+    <h1 className="index-large-heading">Web Developer</h1>
+    <h1 className="index-medium-heading">UI-UX Designer</h1>
   </Layout>
 )
 
