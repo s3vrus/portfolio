@@ -24,7 +24,8 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "sass": "^1.39.0",
-    "smooth-scrollbar": "^8.6.3"
+    "smooth-scrollbar": "^8.6.3",
+    "typewriter-effect": "^2.18.2"
   },
   "devDependencies": {
     "prettier": "2.3.2"

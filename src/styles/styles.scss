@@ -10,6 +10,17 @@ $dark: #0F0E0E;
 // GLOBALS
 // ---------------
 
+*, :after, :before {
+  box-sizing: inherit;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: $font;
   font-size: 16px;
@@ -21,6 +32,9 @@ body {
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
+  @media (min-width: 1540px){
+    max-width: 1520px;
+  }
 }
 
 
@@ -33,35 +47,43 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .nav-center {
-    width: 85vw;
-  }
+  // .nav-center {
+  //   width: 85vw;
+  // }
   .nav-header {
     height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .nav-logo{
-    font-weight: 700;
-    text-decoration: none;
-    letter-spacing: 1.5px;
-    color: $beige;
-  }
-  .nav-link {
+  // .nav-logo{
+  //   font-weight: 700;
+  //   text-decoration: none;
+  //   letter-spacing: 1.5px;
+  //   color: $beige;
+  // }
+  .nav-link{
     margin: 0 20px;
     text-decoration: none;
     letter-spacing: 1.75px;
     text-transform: uppercase;
+    transition: .2s ease-in-out;
     font-size: 0.75rem;
     color:  $beige;
+    &:first-child {
+      margin-left: 0px;
+    }
     &:last-child {
         margin-right: 0px;
     }
+    &:hover{
+      opacity: 75%;
+    }
   }
   .active-link {
-    color: $beige;
+    font-weight: 700; // WANT TO GET RID OF LITTLE STUTTER WITH ACTIVE LINK STAYING AT OPACITY WEN CLICKED
   }
+
 
 // ---------------
 // FOOTER
@@ -70,7 +92,7 @@ body {
     height: 8rem;
     text-align: right;
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     flex-direction: column;
     background: $dark;
@@ -81,7 +103,6 @@ body {
   }
   .page-footer p {
     margin-bottom: 0;
-    width: 85vw;
   }
 
 // ---------------
@@ -103,21 +124,86 @@ body {
 // INDEX PAGE
 // ---------------
 
+.hero {
+  overflow: hidden;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
+}
+
 .index-name {
+  margin: 0 auto;
   font-family: $font;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 100;
   color: $beige;
+  width: 85%;
+  line-height: 5rem;
 }
 .index-large-heading {
+  margin: 0 auto;
   font-family: $font;
-  font-size: 96px;
+  font-size: 8rem;
   font-weight: 400;
   color: $beige;
+  width: 85%;
 }
 .index-medium-heading {
+  margin: 0 auto;
   font-family: $font;
-  font-size: 74px;
+  font-size: 6rem;
   font-weight: 400;
   color: $beige;
+  width: 85%;
+  line-height: 9.5rem;
+  position: relative;
+  left: 16rem;
+}
+
+
+.quick-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quick-info {
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quick-link {
+  margin: 0 20px;
+  line-height: 40px;
+  text-decoration: none;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color:  $beige;
+  &:first-child {
+    margin-left: 0px;
+  }
+  &:last-child {
+    margin-right: 0px;
+    margin-left: 150px;
+    text-align: right;
+  }
+}
+.quick-text {
+  line-height: 20px;
+  font-family: $font;
+  font-size: 0.75rem;
+  text-decoration: none;
+  color:  $beige;
+  text-transform: initial;
+}
+.quick-link div{
+  line-height: 0px;
+  transition: .2s ease-in-out;
+  &:hover{
+    opacity: 75%;
+  }
+}
+
+.hidden {
+  color: transparent;
 }
