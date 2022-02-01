@@ -32,6 +32,7 @@ const IndexPage = () => (
       </div>
     </div>
     
+
     <div className="quick-bar">
       <div className="wrapper">
         <div className="quick-info">
@@ -62,6 +63,28 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+
+
+    <section id="work">
+      <div className="wrapper">
+        <h2 className="index-small-heading">Featured</h2>
+        <h2 className="index-small-heading">Projects</h2>
+      </div>
+    </section>
+
+
+    <section id="about">
+      <div className="wrapper">
+
+      </div>
+    </section>
+
+
+    <section id="conatact">
+      <div className="wrapper">
+        
+      </div>
+    </section>
   </Layout>
 )
 
