@@ -12,8 +12,8 @@ function Layout({children}) {
 
   //Hook
   const size = useWindowSize();
+  
   //Ref
-  const layout = useRef();
   const scrollContainer = useRef();
 
   const skewConfigs = {
@@ -57,15 +57,13 @@ function Layout({children}) {
 
   
   return(
-    <div ref={layout} className="Layout">
+    <>
       <div ref={scrollContainer} className="scroll">
-        <>
-          <Header />
-          {children}
-          <Footer />
-        </>
+        <Header />
+        {children}
+        <Footer />
       </div>
-    </div>
+    </>
   )
 }
 
