@@ -13,10 +13,10 @@ const Header = () => {
           <Link to="/about" className="nav-link" activeClassName="active-link">
             About
           </Link>
-          <Link to="/work" className="nav-link" activeClassName="active-link">
+          <Link className="nav-link disable" activeClassName="active-link">
             Work
           </Link>
-          <Link to="/contact" className="nav-link" activeClassName="active-link">
+          <Link href = "mailto: hello@collinosborne.dev" className="nav-link" activeClassName="active-link">
             Contact
           </Link>
         </div>

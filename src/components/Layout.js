@@ -42,15 +42,16 @@ function Layout({children}) {
   
     //Variables
     const difference = skewConfigs.current - skewConfigs.rounded;
-    const acceleration = difference /size.width
+    const acceleration = difference /size.width;
     const velocity = +acceleration;
-    const skew = velocity * 7.5;
+    // original is * 7.5
+    const skew = velocity * 10;
 
 
     //
-    scrollContainer.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0) skewY(${skew}deg)`
+    scrollContainer.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0) skewY(${skew}deg)`;
 
-    requestAnimationFrame(() => skewScrolling())
+    requestAnimationFrame(() => skewScrolling());
 
   };
 
