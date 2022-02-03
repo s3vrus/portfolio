@@ -4,12 +4,16 @@
 import { useState, useEffect } from "react";
 
 export default function useWindowSize() {
-  function getSize() {
-    return {
-      width: window.innerWidth,
-      height: window.innerHeight
-    };
-  }
+  
+  // Possible fix, at some point may need to get rid of this useEffect
+  useEffect(() => {
+    function getSize() {
+      return {
+        width: window.innerWidth,
+        height: window.innerHeight
+      };
+    }
+  }, []);
 
   const [windowSize, setWindowSize] = useState(getSize);
 
