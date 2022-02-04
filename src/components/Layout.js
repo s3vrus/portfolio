@@ -1,6 +1,6 @@
 import React, {useRef, useEffect} from  "react";
 import Header from "./header";
-import Footer from "./Footer";
+import Footer from "./footer";
 import '../styles/styles.scss';
 
 import useWindowSize from "../hooks/useWindowSize";

@@ -1,7 +1,7 @@
 import * as React from "react"
 import '../styles/styles.scss'
 import Typewriter from 'typewriter-effect'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import gow from '../images/gow.jpg'
 import { motion } from "framer-motion"
 
