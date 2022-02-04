@@ -37,6 +37,14 @@ module.exports = {
         },
       },
     },
+    { 
+      resolve: 'gatsby-plugin-material-ui',
+      options: { 
+        stylesProvider: { 
+          injectFirst: true, 
+        }, 
+      },
+    }
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-sass`
     // this (optional) plugin enables Progressive Web App + Offline functionality
