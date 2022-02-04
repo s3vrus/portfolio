@@ -3,11 +3,12 @@ module.exports = {
     title: `Collin Osborne | Portfolio`,
     description: `A collection of work and information from Collin Osborne`,
     author: `@collin`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://collinosborne.dev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    'gatsby-plugin-netlify',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,8 +16,8 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    // `gatsby-transformer-sharp`,
+    // `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -37,14 +38,6 @@ module.exports = {
         },
       },
     },
-    { 
-      resolve: 'gatsby-plugin-material-ui',
-      options: { 
-        stylesProvider: { 
-          injectFirst: true, 
-        }, 
-      },
-    }
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-sass`
     // this (optional) plugin enables Progressive Web App + Offline functionality
