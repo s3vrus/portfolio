@@ -45,19 +45,19 @@ const IndexPage = () => (
       <div className="quick-bar">
         <div className="wrapper">
           <div className="quick-info">
-          <p className="quick-link">
+            <p className="quick-link">
               Recent Accomplishments:
               <p className="quick-text">Completed 30DaysOfJavaScript</p>
               <p className="quick-text">Graduated from IUPUI</p>
               <p className="quick-text">Taught Molly to roll over</p>
-          </p>
-          <p className="quick-link">
+            </p>
+            <p className="quick-link">
               Currently At:
               <p className="quick-text">Neidhammer</p>
               <p className="quick-text hidden">.</p>
               <p className="quick-text hidden">.</p>
-          </p>
-          <p className="quick-link">
+            </p>
+            <p className="quick-link">
               Links:
               <div>
                 <a className="quick-text" href="https://github.com/s3vrus">GitHub</a>
