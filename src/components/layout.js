@@ -47,8 +47,6 @@ function Layout({children}) {
     // original is * 7.5
     const skew = velocity * 10;
 
-
-    //
     scrollContainer.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0) skewY(${skew}deg)`;
 
     requestAnimationFrame(() => skewScrolling());

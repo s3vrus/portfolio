@@ -12,11 +12,9 @@ const About = () => (
     <Layout>
         <motion.div className="transition-main" initial="hidden" animate="visible" variants={variants}>
             <div className="wrapper">
-
                 <h1 className="about-large-heading">Collin Osborne</h1>
-
                 <div className="about-hero">
-                    <div> {/* on hover show height */}
+                    <div> {/* on hover show height could be cool */}
                         <img src={me} className="img-container2" alt="picture of me"></img>
                     </div>
                     <div className="about-container">
@@ -36,7 +34,6 @@ const About = () => (
                                 researching blockchain based projects, reading, and some occasional gaming
                             </span>
                         </p>
-                        
                         
                         <div className="spacer2"></div>
 

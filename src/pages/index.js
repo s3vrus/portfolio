@@ -3,6 +3,7 @@ import '../styles/styles.scss'
 import Typewriter from 'typewriter-effect'
 import Layout from '../components/layout'
 import gow from '../images/gow.jpg'
+import priv from '../images/priv.png'
 import { motion } from "framer-motion"
 
 const variants = {
@@ -87,6 +88,7 @@ const IndexPage = () => (
           </div>
           <div className="featured-container">
             <h2 className="index-small-heading">God of War</h2>
+            <div className="small-space"></div>
             <p>Designed and developed a tribute site to the God of War (PS4) game.
               Started the project as a way to catch myself up on things I felt school
               wasn't teaching me.
@@ -96,13 +98,13 @@ const IndexPage = () => (
 
         <div className="featured-projects">
           <div>
-            <img src={gow} className="img-container" alt="God of War"></img>
+            <img src={priv} className="img-container" alt="Privacy Coins"></img>
           </div>
           <div className="featured-container">
-            <h2 className="index-small-heading">God of War</h2>
-            <p>Designed and developed a tribute site to the God of War (PS4) game.
-              Started the project as a way to catch myself up on things I felt school
-              wasn't teaching me.
+            <h2 className="index-small-heading">Privacy Coins</h2>
+            <div className="small-space"></div>
+            <p>Webpage that uses CoinGecko API to list prices and data for privacy based
+              cryptocurrencies.
             </p>
           </div>
         </div>
@@ -126,11 +128,11 @@ const IndexPage = () => (
 
 
 
-    <section id="about">
+    {/* <section id="about">
       <div className="wrapper">
 
       </div>
-    </section>
+    </section> */}
 
 
 
@@ -140,7 +142,7 @@ const IndexPage = () => (
         <h2 className="index-small-heading2">Get in touch</h2>
 
         <div className="email-box">
-          <a className="index-thin-heading" href = "mailto: hello@collinosborne.dev">hello@collinosborne.dev</a>
+          <a className="index-thin-heading" href = "mailto:hello@collinosborne.dev">hello@collinosborne.dev</a>
         </div>  
         
         <div className="spacer"></div>
