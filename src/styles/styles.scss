@@ -10,20 +10,15 @@ $dark: #0F0E0E;
 // GLOBALS
 // ---------------
 
-*, :after, :before {
-  box-sizing: inherit;
-  margin: 0;
-  outline: none;
-  padding: 0;
+* {
+  box-sizing: border-box;
 }
 
-html {
-  font-size: 14px;
+html,
+body {
+  height: 100%;
   scrollbar-width: thin;
   scrollbar-color: $beige $dark;
-  @media (min-width: 1540px){
-    font-size: 16px;
-  }
 }
 
 html::-webkit-scrollbar{
@@ -38,71 +33,62 @@ html::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 
-
 body {
+  height: 100%;
   font-family: $font;
-  font-size: 14px;
+  font-size: 16px;
+  color: $beige;
   background-color: $dark;
-  margin: 0px;
-  @media (min-width: 1540px){
-    font-size: 16px;
-  }
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
 }
 
 .wrapper {
+  flex-grow: 1;
   margin: 0 auto;
-  max-width: 1280px;
-  width: 90%;
+  padding: 0 32px;
+  position: relative;
+  width: auto;
+  @media (min-width: 1024px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1216px) {
+    max-width: 1152px;
+  }
+  @media (min-width: 1480px) {
+    max-width: 1244px;
+  }
   @media (min-width: 1540px){
     max-width: 1520px;
   }
+  &.fluid {
+    padding: 0;
+    margin: 0;
+    max-width: 100% !important;
+  }
 }
 
-.scroll {
+.app {
   position: fixed;
-  padding: 2vh 0;
   top: 0;
   left: 0;
-  overflow: hidden;
-  // height: 100%;
+  height: 100%;
   width: 100%;
-  .img-container {
-    width: 691px;
-    height: 367px;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media (min-width: 1540px){
-      width: 791px;
-      height: 420px;
-    }
-    img {
-      width: 100%;
-      position: absolute;
-    }
-  }
-  .img-container2 {
-    width: 500px;
-    height: 450px;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media (min-width: 1540px){
-      width: 600px;
-      height: 540px;
-    }
-    img {
-      width: 100%;
-      position: absolute;
-    }
+  overflow: hidden;
+  .scroll {
+    padding: 2vh 0;
   }
 }
+.img-container {
+  width:691px;
+  height:367px;
+}
+
+.img-container2 {
+  width: 500px;
+  height: 450px;
+}
+
 
 .semi-bold {
   font-weight: 600;
@@ -395,10 +381,14 @@ body {
 .about-text {
   margin: 0 auto;
   font-family: $font;
-  // font-size: 1.75rem;
+  font-size: 0.75rem;
   font-weight: 400;
   color: $beige;
-  line-height: 3rem;
+  line-height: 2.5rem;
+  @media (min-width: 1540px){
+    font-size: .075rem;
+    line-height: 3rem;
+  }
 }
 .about-hero {
   display: flex;
