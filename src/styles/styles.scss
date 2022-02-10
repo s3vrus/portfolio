@@ -79,23 +79,6 @@ body {
     padding: 2vh 0;
   }
 }
-.img-container {
-  width:691px;
-  height:367px;
-}
-
-.img-container2 {
-  width: 500px;
-  height: 450px;
-}
-
-
-.semi-bold {
-  font-weight: 600;
-  &:hover {
-    cursor: pointer;
-  }
-}
 
 .transition-main {
   transition:ease-in-out;
@@ -146,6 +129,63 @@ body {
     opacity: 60%;
   }
 
+.nav-links {
+  @media (max-width: 876px) {
+    display: none;
+  }
+}
+.hamburger-menu {
+  cursor: pointer;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  text-decoration: none;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: right;
+  transition: .2s ease-in-out;
+  font-size: 0.75rem;
+  color:  $beige;
+  display: none;
+  @media (max-width: 876px) {
+    display: block;
+  }
+  // &.open{
+  //   color: transparent;
+  // }
+}
+.panel {
+  max-width: 150px;
+  background-color: transparent;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.34, 1.01);
+  position: fixed;
+  right: -100%;
+  top: 0;
+  height: 300px;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  padding-top: 3em;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  &.open {
+    visibility: visible;
+    width: 100%;
+    right: 0;
+    opacity: 1;
+  }
+}
+.panel-text {
+  margin-top: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color:  $beige;
+  &:first-child {
+    margin-top: 60px;
+  }
+}
+
 
 // ---------------
 // FOOTER
@@ -185,10 +225,10 @@ body {
 
 .hero {
   overflow: hidden;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
   padding-top: 4rem;
   @media (min-width: 1540px){
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
     padding-top: 6rem;
   }
 } 
@@ -212,6 +252,12 @@ body {
   font-weight: 400;
   color: $beige;
   width: 85%;
+  @media (min-width: 1216px) {
+    font-size: 5.5rem;
+  }
+  @media (min-width: 1540px){
+    font-size: 8rem;
+  }
 }
 .index-medium-heading {
   margin: 0 auto;
@@ -223,8 +269,15 @@ body {
   line-height: 8.5rem;
   position: relative;
   left: 16rem;
+  @media (min-width: 1216px) {
+    font-size: 4.5rem;
+    left: 10rem;
+    line-height: 7rem;
+  }
   @media (min-width: 1540px){
+    font-size: 6rem;
     line-height: 9.5rem;
+    left: 16rem;
   }
 }
 .index-small-heading {
@@ -234,12 +287,24 @@ body {
   font-weight: 400;
   color: $beige;
   left: 16rem;
+  @media (min-width: 1216px) {
+    font-size: 3.5rem;
+  }
+  @media (min-width: 1540px){
+    font-size: 4rem;
+  }
 }
 .index-thin-heading {
   margin: 0 auto;
   font-family: $font;
   font-size: 4rem;
   font-weight: 200;
+  @media (min-width: 1216px) {
+    font-size: 3.5rem;
+  }
+  @media (min-width: 1540px){
+    font-size: 4rem;
+  }
 }
 .index-small-heading2 {
   margin: 0 auto;
@@ -248,6 +313,12 @@ body {
   font-weight: 200;
   color: $beige;
   width: fit-content;
+  @media (min-width: 1216px) {
+    font-size: 3.5rem;
+  }
+  @media (min-width: 1540px){
+    font-size: 4rem;
+  }
 }
 .small-space {
   height: 1rem;
@@ -325,7 +396,27 @@ body {
   color:  $beige;
 }
 .featured-container {
-  margin: 0px 6vw;
+  margin: 0px 5vw;
+}
+.img-container {
+  width:691px;
+  height:367px;
+  @media (min-width: 1024px) {
+    width: 480px;
+    height:270px;
+  }
+  @media (min-width: 1216px) {
+    width:576px;
+    height:324px;
+  }
+  @media (min-width: 1480px) {
+    width:614px;
+    height:345px;
+  }
+  @media (min-width: 1540px){
+    width:774px;
+    height:435px;
+  }
 }
 
 .email-box {
@@ -365,6 +456,15 @@ body {
 // ABOUT PAGE
 // ---------------
 
+.img-container2 {
+  width: 500px;
+  height: 450px;
+  @media (min-width: 1540px){
+    width: 600px;
+    height: 540px;
+  }
+}
+
 .about-large-heading {
   margin: 0 auto;
   font-family: $font;
@@ -373,9 +473,15 @@ body {
   color: $beige;
   padding-bottom: 5rem;
   padding-top: 6rem;
+  @media (min-width: 1216px){
+    font-size: 6rem;
+    padding-bottom: 5rem;
+    padding-top: 6rem;
+  }
   @media (min-width: 1540px){
     padding-bottom: 6rem;
     padding-top: 8rem;
+    font-size: 8rem;
   }
 }
 .about-text {
@@ -385,8 +491,10 @@ body {
   font-weight: 400;
   color: $beige;
   line-height: 2.5rem;
+  @media (min-width: 1216px){
+    line-height: 2.5rem;
+  }
   @media (min-width: 1540px){
-    font-size: .075rem;
     line-height: 3rem;
   }
 }
@@ -397,7 +505,6 @@ body {
   -webkit-box-align: center;
   align-items: flex-start;
   padding: 0;
-  // margin: 15vw 0px;
   color: inherit;
   text-decoration: none;
 }
@@ -405,7 +512,20 @@ body {
   font-family: $font;
   font-size: 1.5rem;
   color:  $beige;
+  @media (min-width: 1216px){
+    font-size: 1.25rem;
+  }
+  @media (min-width: 1540px){
+    font-size: 1.5rem;
+  }
 }
 .about-container {
   margin: 0px 6vw;
+}
+
+.semi-bold {
+  font-weight: 600;
+  &:hover {
+    cursor: pointer;
+  }
 }
