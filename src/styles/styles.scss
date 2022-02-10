@@ -198,6 +198,9 @@ body {
     // flex-direction: column;
     background: $dark;
     color: $beige;
+    @media (max-width: 680px) {
+      font-size: 0.75rem;
+    }
   }
   .footer-left {
     text-align: left;
@@ -225,8 +228,12 @@ body {
 
 .hero {
   overflow: hidden;
-  padding-bottom: 6rem;
-  padding-top: 4rem;
+  padding-bottom: 14rem;
+  padding-top: 10rem;
+  @media (min-width: 680px){
+    padding-bottom: 6rem;
+    padding-top: 4rem;
+  }
   @media (min-width: 1540px){
     padding-bottom: 8rem;
     padding-top: 6rem;
@@ -481,6 +488,10 @@ body {
 }
 .featured-container {
   margin: 0px 5vw;
+  width: 350px;
+  @media (min-width: 680px) {
+    width: auto;
+  }
 }
 .img-container {
   width:350px;
@@ -531,6 +542,10 @@ body {
     background-color: $beige;
     border-radius: 50px;
   }
+  @media (max-width: 680px) {
+    border: $beige solid 3px;
+  }
+
 }
 .email-box a {
   text-decoration: none;
