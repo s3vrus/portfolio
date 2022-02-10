@@ -47,7 +47,7 @@ function Layout({children, location}) {
     const acceleration = difference /size.width;
     const velocity = +acceleration;
     // original is * 7.5    \/
-    const skew = velocity * 10;
+    const skew = velocity * 7.5;
 
     scrollContainer.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0) skewY(${skew}deg)`;
 

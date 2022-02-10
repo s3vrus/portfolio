@@ -55,8 +55,6 @@ const IndexPage = () => (
             <div className="quick-link">
               Currently At:
               <p className="quick-text">Neidhammer</p>
-              <p className="quick-text hidden">.</p>
-              <p className="quick-text hidden">.</p>
             </div>
             <div className="quick-link">
               Links:
