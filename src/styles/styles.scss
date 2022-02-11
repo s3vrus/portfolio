@@ -530,6 +530,12 @@ body {
   }
 }
 
+#contact {
+  @media (max-width: 680px) {
+    padding-top: 3rem;
+  }
+}
+
 .email-box {
   margin: 1.5vw auto;
   background-color: $dark;
@@ -574,7 +580,7 @@ body {
 .img-container2 {
   width: 300px;
   height: 270px;
-  @media (min-width: 768px){
+  @media (min-width: 460px){
     width: 400px;
     height: 360px;
   }
@@ -625,11 +631,10 @@ body {
   color: $beige;
   line-height: 1.5rem;
   padding-top: 2rem;
-  text-align: center;
+  text-align: start;
   @media (min-width: 1024px) {
     padding-top: 0rem;
     line-height: 2rem;
-    text-align: start;
   }
   @media (min-width: 1216px){
     line-height: 2.5rem;
@@ -666,6 +671,12 @@ body {
 }
 .about-container {
   margin: 0px 6vw;
+  @media (max-width: 1024px){
+    width: 400px;
+  }
+  @media (max-width: 460px){
+    width: 300px;
+  }
 }
 
 .semi-bold {

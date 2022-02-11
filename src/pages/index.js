@@ -134,7 +134,7 @@ const IndexPage = () => (
 
 
 
-    <section id="conatact">
+    <section id="contact">
       <div className="wrapper">
 
         <h2 className="index-small-heading2">Get in touch</h2>
