@@ -81,9 +81,11 @@ const IndexPage = () => (
 
 
         <div className="featured-projects">
-          <div>
-            <img src={gow} className="img-container" alt="God of War"></img>
-          </div>
+          <a href="/gow">
+            <div>
+              <img src={gow} className="img-container" alt="God of War"></img>
+            </div>
+          </a>
           <div className="featured-container">
             <h2 className="index-small-heading">God of War</h2>
             <div className="small-space"></div>
@@ -91,19 +93,25 @@ const IndexPage = () => (
               Started the project as a way to catch myself up on things I felt school
               wasn't teaching me.
             </p>
+            <div className="small-space"></div>
+            <a className="proj-link" href="/gow">Preview Project</a>
           </div>
         </div>
 
         <div className="featured-projects">
-          <div>
-            <img src={priv} className="img-container" alt="Privacy Coins"></img>
-          </div>
+          <a href="/privacycoins">
+            <div>
+              <img src={priv} className="img-container" alt="Privacy Coins"></img>
+            </div>
+          </a>
           <div className="featured-container">
             <h2 className="index-small-heading">Privacy Coins</h2>
             <div className="small-space"></div>
             <p>Webpage that uses CoinGecko API to list prices and data for privacy based
               cryptocurrencies.
             </p>
+            <div className="small-space"></div>
+            <a className="proj-link" href="/privacycoins">Preview Project</a>
           </div>
         </div>
 
@@ -117,6 +125,8 @@ const IndexPage = () => (
               Started the project as a way to catch myself up on things I felt school
               wasn't teaching me.
             </p>
+            <div className="small-space"></div>
+            <a className="proj-link">Preview Project</a>
           </div>
         </div>
 

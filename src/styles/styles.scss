@@ -530,6 +530,15 @@ body {
   }
 }
 
+.proj-link{
+  font-family: $font;
+  font-size: 0.75rem;
+  color: $beige;
+  @media (min-width: 1024px) {
+    font-size: 1.25rem;
+  }
+}
+
 #contact {
   @media (max-width: 680px) {
     padding-top: 3rem;
