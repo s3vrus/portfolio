@@ -26,13 +26,13 @@ const IndexPage = () => (
                   .typeString("UI-UX Designer")
                   .pauseFor(2000)
                   .deleteAll()
-                  .typeString("Blockchain Enthusiast")
+                  .typeString("Marketing Strategist")
                   .pauseFor(2000)
                   .deleteAll()
                   .typeString("Data Analyst")
                   .pauseFor(2000)
                   .deleteAll()
-                  .typeString("Marketing Strategist")
+                  .typeString("Blockchain Enthusiast")
                   
                   .start();
               }}
@@ -126,7 +126,7 @@ const IndexPage = () => (
               wasn't teaching me.
             </p>
             <div className="small-space"></div>
-            <a className="proj-link">Preview Project</a>
+            <a className="proj-link" href="/gow">Preview Project</a>
           </div>
         </div>
 

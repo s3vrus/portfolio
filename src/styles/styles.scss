@@ -694,3 +694,85 @@ body {
     cursor: pointer;
   }
 }
+
+
+// ---------------
+// PROJECTS PAGES
+// ---------------
+
+.projects-main-img {
+  opacity: 0.75;
+  width:350px;
+  height:197px;
+  @media (min-width: 768px) {
+    width: 375px;
+    height:211px;
+  }
+  @media (min-width: 800px) {
+    width: 420px;
+    height:236px;
+  }
+  @media (min-width: 900px) {
+    width: 450px;
+    height:253px;
+  }
+  @media (min-width: 1024px) {
+    width: 480px;
+    height:270px;
+  }
+  @media (min-width: 1216px) {
+    width:576px;
+    height:324px;
+  }
+  @media (min-width: 1480px) {
+    width:614px;
+    height:345px;
+  }
+  @media (min-width: 1540px){
+    width:774px;
+    height:435px;
+  }
+}
+
+
+.projects-large-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-header {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 10rem;
+  position: absolute;
+  color: $beige;
+}
+
+.projects-breakdown {
+  font-family: $font;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.projects-details {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $beige;
+  @media (max-width: 680px) {
+    font-size: 0.75rem;
+  }
+}
+.details-left {
+  text-align: left;
+}
+.details-right {
+  text-align: right;
+}
+
+.projects-link {
+  color: $beige;
+}
