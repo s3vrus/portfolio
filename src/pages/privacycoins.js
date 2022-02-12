@@ -2,6 +2,8 @@ import * as React from "react"
 import Layout from "../components/layout"
 import { motion } from "framer-motion"
 import priv from '../images/priv.png'
+import blockchain from '../images/blockchain.jpg'
+import privcoins from '../images/priv-coin.png'
 
 const variants = {
   hidden: { opacity: 0 },
@@ -42,12 +44,19 @@ const Priv = () => (
 
                 <div className="projects-breakdown">
                     <p>
-                        This personal project is a multi-page fully responsive website . I created 
-                        the God of War site using Gatsby, SASS, and hosted on Netlify.
-                        This was my first time building out a full website so this whole site was
-                        a big learning process. While building I vastly improved my CSS and best
-                        practices for creating page layouts.
+                        This personal project is a multi-page website where when you click on the 
+                        different privacy coins it will open a page with more specific information 
+                        about them based on their unique id in the API. I created the Privacy Coins 
+                        site using React, CSS, the Coin Gecko API, and Netlify for hosting.
+                        The main objecttive for this project was to create a site that interacts with
+                        a third-party API.
                     </p>
+                </div>
+
+                <div className="projects-feature-container">
+                    <img src={priv} className="projects-feature-img" alt="Privacy Coins"></img>
+                    <img src={blockchain} className="projects-feature-img" alt="Privacy Coins"></img>
+                    <img src={privcoins} className="projects-feature-img" alt="Privacy Coins"></img>
                 </div>
             </div>
         </motion.div>
