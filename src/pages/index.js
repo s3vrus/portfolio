@@ -4,6 +4,7 @@ import Typewriter from 'typewriter-effect'
 import Layout from '../components/layout'
 import gow from '../images/gow.jpg'
 import priv from '../images/priv.png'
+import nft from '../images/nft-connected.png'
 import { motion } from "framer-motion"
 
 const variants = {
@@ -62,13 +63,13 @@ const IndexPage = () => (
             <div className="quick-link">
               Links:
               <div>
-                <a className="quick-text" href="https://github.com/s3vrus">GitHub</a>
+                <a className="quick-text" href="https://github.com/s3vrus" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
               <div>
-                <a className="quick-text" href="https://twitter.com/svrus3">Twitter</a>
+                <a className="quick-text" href="https://twitter.com/svrus3" target="_blank" rel="noopener noreferrer">Twitter</a>
               </div>
               <div>
-                <a className="quick-text" href="https://github.com/s3vrus">LinkedIn</a>
+                <a className="quick-text" href="https://github.com/s3vrus" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               </div>
             </div>
           </div>
@@ -119,14 +120,15 @@ const IndexPage = () => (
         </div>
 
         <div className="featured-projects">
-          <div>
-            <img src={gow} className="img-container" alt="God of War"></img>
-          </div>
+          <a href="/nftinfo">
+            <div>
+              <img src={nft} className="img-container" alt="NFT Info"></img>
+            </div>
+          </a>
           <div className="featured-container">
-            <h2 className="index-small-heading">God of War</h2>
-            <p>Designed and developed a tribute site to the God of War (PS4) game.
-              Started the project as a way to catch myself up on things I felt school
-              wasn't teaching me.
+            <h2 className="index-small-heading">NFT Info</h2>
+            <p>A simple web app that allows a user to connect their MetaMask and then it uses the 
+              OpenSea API to get information on all of the NFT collections in the users wallet.
             </p>
             <div className="small-space"></div>
             <a className="proj-link" href="/gow">Preview Project</a>

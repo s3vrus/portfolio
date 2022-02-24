@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import gow from '../images/gow.jpg'
 import gowrealms from '../images/gow-realms.png'
 import gowenemies from '../images/gow-enemies.png'
-import gowscene from '../images/gow-scene.jpg'
+import gowscene from '../images/gow-scene.png'
 
 const variants = {
   hidden: { opacity: 0 },
@@ -30,7 +30,7 @@ const Gow = () => (
                         <p>
                             Live Site
                         </p>
-                        <a className="projects-link" href="https://s3vrus.github.io/GoW-Site/">https://godofwar.netlify.app</a>
+                        <a className="projects-link" href="https://godofwar-tribute.netlify.app" target="_blank" rel="noopener noreferrer">https://godofwar.netlify.app</a>
                     </div>
                     <div  className="details-right">
                         <p>
@@ -45,11 +45,12 @@ const Gow = () => (
 
                 <div className="projects-breakdown">
                     <p>
-                        This personal project is a multi-page fully responsive website. I created 
-                        the God of War site using Gatsby, SASS, and hosted on Netlify.
-                        This was my first time building out a full website so this whole site was
-                        a big learning process. While building I vastly improved my CSS and best
-                        practices for creating page layouts.
+                        This personal project is a multi-page fully responsive website. It is
+                        meant to be a place to get some quick info about the different aspects
+                        of the game including information about some of the main characters, the 
+                        different realms and what you will encounter there, and the enemies you 
+                        will fight along the way. I created the God of War site using Gatsby, 
+                        SASS, and hosted on Netlify.
                     </p>
                 </div>
 

@@ -2,7 +2,6 @@ import * as React from "react"
 import Layout from "../components/layout"
 import { motion } from "framer-motion"
 import priv from '../images/priv.png'
-import blockchain from '../images/blockchain.jpg'
 import privcoins from '../images/priv-coin.png'
 
 const variants = {
@@ -29,7 +28,7 @@ const Priv = () => (
                         <p>
                             Live Site
                         </p>
-                        <a className="projects-link" href="https://privacy-coins.netlify.app/">https://privacy-coins.netlify.app/</a>
+                        <a className="projects-link" href="https://privacy-coins.netlify.app/" target="_blank" rel="noopener noreferrer">https://privacy-coins.netlify.app/</a>
                     </div>
                     <div  className="details-right">
                         <p>
@@ -55,7 +54,7 @@ const Priv = () => (
 
                 <div className="projects-feature-container">
                     <img src={priv} className="projects-feature-img" alt="Privacy Coins"></img>
-                    <img src={blockchain} className="projects-feature-img" alt="Privacy Coins"></img>
+                    <img alt=""></img>
                     <img src={privcoins} className="projects-feature-img" alt="Privacy Coins"></img>
                 </div>
             </div>

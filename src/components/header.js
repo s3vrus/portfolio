@@ -17,12 +17,12 @@ const Header = () => {
           <Link to="/about" className="nav-link" activeClassName="active-link">
             About
           </Link>
-          <Link className="nav-link disable" activeClassName="active-link">
+          <Link to="" className="nav-link disable" activeClassName="active-link">
             Work
           </Link>
-          <Link href = "mailto:hello@collinosborne.dev" className="nav-link" activeClassName="active-link">
+          <a href="mailto:hello@collinosborne.dev" className="nav-link">
             Contact
-          </Link>
+          </a>
         </div>
 
         <div onClick={() => setOpen(!isOpen)} className={`hamburger-menu ${isOpen ? "open" : "close"}`}>
@@ -31,12 +31,12 @@ const Header = () => {
             <Link to="/about" className="panel-text">
               About
             </Link>
-            <Link className="disable panel-text">
+            <Link to="" className="disable panel-text">
               Work
             </Link>
-            <Link href = "mailto:hello@collinosborne.dev" className="panel-text">
+            <a href="mailto:hello@collinosborne.dev" className="panel-text">
               Contact
-            </Link>
+            </a>
           </div>
         </div>
 

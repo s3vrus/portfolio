@@ -10,7 +10,7 @@ const Footer = () => {
               Based in
           </p>
           <p>
-              Highlands Ranch, CO
+              Colorado
           </p>
         </div>
 
