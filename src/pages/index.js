@@ -69,7 +69,7 @@ const IndexPage = () => (
                 <a className="quick-text" href="https://twitter.com/svrus3" target="_blank" rel="noopener noreferrer">Twitter</a>
               </div>
               <div>
-                <a className="quick-text" href="www.linkedin.com/in/collin-o-0a010521b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a className="quick-text" href="https://linkedin.com/in/collin-o-0a010521b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               </div>
             </div>
           </div>
