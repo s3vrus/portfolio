@@ -3,6 +3,7 @@ import '../styles/styles.scss'
 import Typewriter from 'typewriter-effect'
 import Layout from '../components/layout'
 import gow from '../images/gow.jpg'
+import ikuza from '../images/ikuza-mint.png'
 import priv from '../images/priv.png'
 import nft from '../images/nft-connected.png'
 import { motion } from "framer-motion"
@@ -69,7 +70,7 @@ const IndexPage = () => (
                 <a className="quick-text" href="https://twitter.com/svrus3" target="_blank" rel="noopener noreferrer">Twitter</a>
               </div>
               <div>
-                <a className="quick-text" href="https://linkedin.com/in/collin-o-0a010521b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a className="quick-text" href="https://www.linkedin.com/in/collinOsborneDev/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               </div>
             </div>
           </div>
@@ -83,6 +84,21 @@ const IndexPage = () => (
         <h2 className="index-small-heading">Featured</h2>
         <h2 className="index-small-heading">Projects</h2>
 
+        <div className="featured-projects">
+          <a href="/ikuza">
+            <div>
+              <img src={ikuza} className="img-container" alt="Ikuza"></img>
+            </div>
+          </a>
+          <div className="featured-container">
+            <h2 className="index-small-heading">IKUZA</h2>
+            <div className="small-space"></div>
+            <p>An NFT collection site inspired by the popular collection, Azuki.
+            </p>
+            <div className="small-space"></div>
+            <a className="proj-link" href="/ikuza">Preview Project</a>
+          </div>
+        </div>
 
         <div className="featured-projects">
           <a href="/gow">
