@@ -2,7 +2,7 @@ import * as React from "react"
 import '../styles/styles.scss'
 import Typewriter from 'typewriter-effect'
 import Layout from '../components/layout'
-import gow from '../images/gow.jpg'
+import gow from '../images/gow.png'
 import ikuza from '../images/ikuza-mint.png'
 import nftcentral from '../images/nftcentral.png'
 import { motion } from "framer-motion"

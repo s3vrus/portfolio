@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import { motion } from "framer-motion"
-import gow from '../images/gow.jpg'
+import gow from '../images/gow.png'
 import gowrealms from '../images/gow-realms.png'
 import gowenemies from '../images/gow-enemies.png'
 import gowscene from '../images/gow-scene.png'
