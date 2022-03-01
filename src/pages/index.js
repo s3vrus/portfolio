@@ -4,8 +4,7 @@ import Typewriter from 'typewriter-effect'
 import Layout from '../components/layout'
 import gow from '../images/gow.jpg'
 import ikuza from '../images/ikuza-mint.png'
-import priv from '../images/priv.png'
-import nft from '../images/nft-connected.png'
+import nftcentral from '../images/nftcentral.png'
 import { motion } from "framer-motion"
 
 const variants = {
@@ -94,9 +93,28 @@ const IndexPage = () => (
             <h2 className="index-small-heading">IKUZA</h2>
             <div className="small-space"></div>
             <p>An NFT collection site inspired by the popular collection, Azuki.
+               Fully responsive with a clean and minimal design.
             </p>
             <div className="small-space"></div>
             <a className="proj-link" href="/ikuza">Preview Project</a>
+          </div>
+        </div>
+
+        <div className="featured-projects">
+          <a href="/nftcentral">
+            <div>
+              <img src={nftcentral} className="img-container" alt="NFT Central"></img>
+            </div>
+          </a>
+          <div className="featured-container">
+            <h2 className="index-small-heading">NFT Central</h2>
+            <div className="small-space"></div>
+            <p>Website that uses multiple API's to gather data about cryptocurrencies
+              and NFTs. Allows users to log in using MetaMask to have access to a 
+              profile page.
+            </p>
+            <div className="small-space"></div>
+            <a className="proj-link" href="/nftcentral">Preview Project</a>
           </div>
         </div>
 
@@ -117,40 +135,6 @@ const IndexPage = () => (
             <a className="proj-link" href="/gow">Preview Project</a>
           </div>
         </div>
-
-        <div className="featured-projects">
-          <a href="/privacycoins">
-            <div>
-              <img src={priv} className="img-container" alt="Privacy Coins"></img>
-            </div>
-          </a>
-          <div className="featured-container">
-            <h2 className="index-small-heading">Privacy Coins</h2>
-            <div className="small-space"></div>
-            <p>Webpage that uses CoinGecko API to list prices and data for privacy based
-              cryptocurrencies.
-            </p>
-            <div className="small-space"></div>
-            <a className="proj-link" href="/privacycoins">Preview Project</a>
-          </div>
-        </div>
-
-        <div className="featured-projects">
-          <a href="/nftinfo">
-            <div>
-              <img src={nft} className="img-container" alt="NFT Info"></img>
-            </div>
-          </a>
-          <div className="featured-container">
-            <h2 className="index-small-heading">NFT Info</h2>
-            <p>A simple web app that allows a user to connect their MetaMask and then it uses the 
-              OpenSea API to get information on all of the NFT collections in the users wallet.
-            </p>
-            <div className="small-space"></div>
-            <a className="proj-link" href="/gow">Preview Project</a>
-          </div>
-        </div>
-
 
       </div>
     </section>
