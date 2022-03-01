@@ -898,3 +898,13 @@ body {
 .projects-link {
   color: $beige;
 }
+
+
+.next-project {
+  text-align: center;
+  margin: 6rem 0;
+  a{
+    color: $beige;
+    cursor: pointer;
+  }
+}

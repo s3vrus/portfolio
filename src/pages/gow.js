@@ -59,6 +59,11 @@ const Gow = () => (
                     <img src={gowscene} className="projects-feature-img" alt="God of War"></img>
                     <img src={gowenemies} className="projects-feature-img" alt="God of War"></img>
                 </div>
+
+                <div className="next-project">
+                    <a href="/ikuza">Next Project</a>
+                </div>
+
             </div>
         </motion.div>
     </Layout>
