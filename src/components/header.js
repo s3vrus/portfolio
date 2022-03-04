@@ -19,6 +19,7 @@ const Header = () => {
           </Link>
           <Link to="" className="nav-link disable" activeClassName="active-link">
             Work
+            {/* <span className="label">Soon</span> */}
           </Link>
           <a href="mailto:hello@collinosborne.dev" className="nav-link">
             Contact

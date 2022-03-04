@@ -53,7 +53,7 @@ const IndexPage = () => (
             <div className="quick-link">
               Recent Accomplishments:
               <p className="quick-text">Completed 30DaysOfJavaScript</p>
-              <p className="quick-text">Graduated from IUPUI</p>
+              <p className="quick-text">Graduating from IUPUI</p>
               <p className="quick-text">Taught Molly to roll over</p>
             </div>
             <div className="quick-link">

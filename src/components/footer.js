@@ -10,7 +10,7 @@ const Footer = () => {
               Based in
           </p>
           <p>
-              Colorado
+              Colorado (soon)
           </p>
         </div>
 
