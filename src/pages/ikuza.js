@@ -58,6 +58,11 @@ const Ikuza = () => (
                     <img src={ikuzaRm} className="projects-feature-img" alt="roadmap"></img>
                     <img src={ikuzaTeam} className="projects-feature-img" alt="team"></img>
                 </div>
+            
+            <div className="next-project">
+                <a href="/nftcentral">Next Project</a>
+            </div>
+
             </div>
         </motion.div>
     </Layout>

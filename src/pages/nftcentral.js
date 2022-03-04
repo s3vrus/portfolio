@@ -63,6 +63,11 @@ const Priv = () => (
                     <img src={nftcoin} className="projects-feature-img" alt=""></img>
                     <img src={nftprofile} className="projects-feature-img" alt=""></img>
                 </div>
+
+                <div className="next-project">
+                    <a href="/gow">Next Project</a>
+                </div>
+
             </div>
         </motion.div>
     </Layout>
