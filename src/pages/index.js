@@ -128,8 +128,7 @@ const IndexPage = () => (
             <h2 className="index-small-heading">God of War</h2>
             <div className="small-space"></div>
             <p>Designed and developed a tribute site to the God of War (PS4) game.
-              Started the project as a way to catch myself up on things I felt school
-              wasn't teaching me.
+              Built using Gatsby and uses GraphQL to handle background images.
             </p>
             <div className="small-space"></div>
             <a className="proj-link" href="/gow">Preview Project</a>

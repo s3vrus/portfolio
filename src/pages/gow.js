@@ -50,7 +50,7 @@ const Gow = () => (
                         of the game including information about some of the main characters, the 
                         different realms and what you will encounter there, and the enemies you 
                         will fight along the way. I created the God of War site using Gatsby, 
-                        SASS, and hosted on Netlify.
+                        CSS, and hosted on Netlify.
                     </p>
                 </div>
 
